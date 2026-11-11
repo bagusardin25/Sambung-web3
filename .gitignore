@@ -1,0 +1,41 @@
+# Dependencies and build output
+node_modules/
+dist/
+dist-ssr/
+coverage/
+coverage.json
+*.tsbuildinfo
+
+# Secrets. Commit .env.example only; real keys stay on the machine.
+.env
+.env.*
+!.env.example
+.envrc
+.env.keys
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+keystore.json
+secrets.json
+.secret
+
+# Hardhat
+contracts/artifacts/
+contracts/cache/
+contracts/typechain/
+contracts/typechain-types/
+contracts/deployments/localhost.json
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+*.local
+
+# Hosting
+.vercel
