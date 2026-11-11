@@ -7,14 +7,44 @@ Someone opens a story with a title and a first line. Other wallets carry it on, 
 *Sambung* is Indonesian for "to continue".
 
 - Product scope and decisions: [PRD.md](PRD.md)
+- Where the project stands: [PROGRESS.md](PROGRESS.md)
 - Network: BOT Chain Mainnet, chain ID 677 — <https://botchain.ai> · <https://scan.botchain.ai>
+
+![Sambung home page: "Write one line. Pass the thread." beside a story being written right now, how a story gets written in four knots on a red thread, live totals, and the stories waiting for a line](docs/screenshots/01-home.jpg)
+
+## Screenshots
+
+Taken from the local chain with the sample stories that `npm run seed:local` creates.
+
+### Writing
+
+| Continuing a story | Starting one |
+|---|---|
+| ![Grandmother's rice cooker, line 6 of 12: five lines hang on a red thread with their authors, and the next line is being typed in the box below with a byte counter and the writer's remaining share](docs/screenshots/02-story-writing.jpg) | ![Start a story form: title, genre chips with Folklore chosen, the Classic length of 12 lines with up to 4 each, and the opening line filled in](docs/screenshots/04-new-story.jpg) |
+
+### Reading
+
+| A sealed story | Library |
+|---|---|
+| ![The lamp on the pier, sealed: six lines by three authors end in a red seal, with the applause count and the list of authors](docs/screenshots/03-story-sealed.jpg) | ![Library of sealed stories, ordered by applause, with a genre filter](docs/screenshots/05-library.jpg) |
+
+| My desk |
+|---|
+| ![My desk for the pen name Hadi Pasar: lines written, stories opened and joined, the pen name form, and a story waiting for someone else](docs/screenshots/06-desk.jpg) |
+
+### Phone and tablet
+
+| Home at 375 px | A story at 375 px | A sealed story at 768 px |
+|---|---|---|
+| ![Home page on a phone with the hero, the example story and the steps on a vertical thread](docs/screenshots/07-mobile-home.jpg) | ![Grandmother's rice cooker on a phone: the thread down the left edge and the box for line 6](docs/screenshots/08-mobile-story.jpg) | ![The well that answered, sealed, at 768 px, with line numbers in the margin](docs/screenshots/09-tablet-sealed.jpg) |
 
 ## Layout
 
 ```
 sambung/
 ├── contracts/   Hardhat project: Sambung.sol, tests, deploy and seed scripts
-└── web/         Vite + React + TypeScript + viem front end
+├── web/         Vite + React + TypeScript + viem front end
+└── docs/        Screenshots used in this README
 ```
 
 ## Run it locally
