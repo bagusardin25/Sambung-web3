@@ -1,0 +1,78 @@
+/*
+  Sambung design tokens.
+  Direction: quiet book typography and a single red thread, so shared authorship is
+  something you can see. The thread is the only strong colour on the page.
+  Every text/background pair below was checked for WCAG AA contrast.
+*/
+:root {
+  /* Paper */
+  --paper: #f4eee1;
+  --surface: #fbf7ee;
+  --sunken: #ebe3d2;
+
+  /* Ink */
+  --ink: #1f1b16;
+  --ink-muted: #5c5346; /* 6.5:1 on paper */
+  --ink-faint: #6e6454; /* 5.0:1 on paper */
+
+  /* Lines */
+  --rule: #d8cdb8; /* decorative dividers */
+  --border-control: #8a7e68; /* 3.4:1 on paper: form and button boundaries */
+
+  /* The thread */
+  --thread: #b3261e; /* 5.6:1 on paper */
+  --thread-deep: #8f1d17;
+  --on-thread: #fff9f0; /* 6.2:1 on thread */
+
+  /* States */
+  --sealed: #2c5a38;
+  --sealed-tint: #e1ead9;
+  --warn: #6f4700;
+  --warn-tint: #f5e6c0;
+  --error: #8f1d17;
+  --error-tint: #f6dcd6;
+
+  /* Type */
+  --font-serif: 'Newsreader Variable', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-sans: 'Instrument Sans Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-story: clamp(1.125rem, 0.95rem + 0.6vw, 1.3125rem);
+  --text-h3: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  --text-h2: clamp(1.5rem, 1.2rem + 1.2vw, 2.125rem);
+  --text-h1: clamp(2rem, 1.4rem + 2.6vw, 3.25rem);
+  --text-display: clamp(2.6rem, 1.4rem + 5.2vw, 4.75rem);
+
+  /* Space: a 4px scale */
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 0.75rem;
+  --s4: 1rem;
+  --s5: 1.5rem;
+  --s6: 2rem;
+  --s7: 3rem;
+  --s8: 4rem;
+  --s9: 6rem;
+
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --page-max: 70rem;
+  --measure: 40rem;
+
+  --radius: 6px;
+  --radius-lg: 10px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --fast: 120ms;
+  --medium: 240ms;
+  --slow: 520ms;
+
+  /* Thread geometry, shared by every list that hangs lines on the thread */
+  --thread-x: 0.75rem; /* centre of the thread from the item's left edge */
+  --thread-gap: 2.75rem; /* where text starts */
+  --thread-w: 2px;
+}
