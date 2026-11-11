@@ -22,7 +22,7 @@ Pekerjaan dijeda di sini karena langkah berikutnya menunggu repo dan wallet depl
 
 ### Dokumen
 - [PRD.md](PRD.md) versi 1.1 — scope, fitur, alur, spesifikasi contract, tahapan.
-- [README.md](README.md) — cara menjalankan, deploy, dan setting Vercel.
+- [README.md](README.md) — cara menjalankan, deploy, setting Vercel, dan 9 screenshot (desktop, 768 px, 375 px) di `docs/screenshots/`.
 
 ### Smart contract (`contracts/`)
 - `contracts/Sambung.sol` — Solidity 0.8.24, target EVM `paris`, optimizer 200 runs, tanpa dependensi, tanpa fungsi payable.
